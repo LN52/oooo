@@ -44,10 +44,10 @@
    - 在 "Environment variables" 部分，点击 "New variable"
    - 添加第一个变量：
      - Key: `VITE_SUPABASE_URL`
-     - Value: `https://jmsafmeyyjjtopjtfhhj.supabase.co`
+     - Value: `你的 Supabase Project URL`（例如：`https://xxxxx.supabase.co`）
    - 点击 "Add variable" 添加第二个变量：
      - Key: `VITE_SUPABASE_ANON_KEY`
-     - Value: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptc2FmbWV5eWpqdG9wanRmaGhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM4MzAxMDQsImV4cCI6MjA3OTQwNjEwNH0.Z9frOTaYNDmrQdxi4NH7CDvaxARPsLFEelqrN_hPgTc`
+     - Value: `你的 Supabase anon key`（从 Supabase 项目设置中获取）
 
 5. **开始部署**
    - 点击 "Deploy site" 按钮
@@ -99,8 +99,8 @@ netlify init
 ### 步骤 4：设置环境变量
 
 ```bash
-netlify env:set VITE_SUPABASE_URL "https://jmsafmeyyjjtopjtfhhj.supabase.co"
-netlify env:set VITE_SUPABASE_ANON_KEY "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptc2FmbWV5eWpqdG9wanRmaGhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM4MzAxMDQsImV4cCI6MjA3OTQwNjEwNH0.Z9frOTaYNDmrQdxi4NH7CDvaxARPsLFEelqrN_hPgTc"
+netlify env:set VITE_SUPABASE_URL "你的 Supabase Project URL"
+netlify env:set VITE_SUPABASE_ANON_KEY "你的 Supabase anon key"
 ```
 
 ### 步骤 5：部署到生产环境
